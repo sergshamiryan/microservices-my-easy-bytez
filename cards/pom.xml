@@ -78,7 +78,7 @@
                 <version>3.4.0</version>
                 <configuration>
                     <to>
-                        <image>sergshamriyan/${project.artifactId}:s4</image>
+                        <image>sergshamriyan/${project.artifactId}:latest</image>
                     </to>
                 </configuration>
             </plugin>

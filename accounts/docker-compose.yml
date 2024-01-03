@@ -1,6 +1,6 @@
 services:
   accounts:
-    image: "sergshamiryan/accounts:s4"
+    image: "sergshamiryan/accountslatest"
     container_name: "accounts-ms"
     ports:
       - "8080:8080"
@@ -12,7 +12,7 @@ services:
       - sergshamiryan
 
   loans:
-    image: "sergshamriyan/loans:s4"
+    image: "sergshamriyan/loanslatest"
     container_name: "loans-ms"
     ports:
       - "8090:8090"
@@ -24,7 +24,7 @@ services:
       - sergshamiryan
 
   cards:
-    image: "sergshamriyan/cards:s4"
+    image: "sergshamriyan/cardslatest"
     container_name: "cards-ms"
     ports:
       - "9000:9000"

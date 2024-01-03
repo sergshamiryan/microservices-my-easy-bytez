@@ -16,6 +16,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import serg.shamiryan.accounts.accountService.AccountService;
 import serg.shamiryan.accounts.constants.AccountsConstants;
+import serg.shamiryan.accounts.dto.AccountsContactInfoDto;
 import serg.shamiryan.accounts.dto.CustomerDto;
 import serg.shamiryan.accounts.dto.ErrorResponseDto;
 import serg.shamiryan.accounts.dto.ResponseDto;
@@ -31,6 +32,8 @@ import serg.shamiryan.accounts.dto.ResponseDto;
 public class AccountsController {
 
     private final AccountService accountService;
+
+    private final AccountsContactInfoDto accountsContactInfoDto;
 
     @Operation(
             summary = "Create Account Rest API",
@@ -102,5 +105,10 @@ public class AccountsController {
                     .body(new ResponseDto(AccountsConstants.STATUS_417,
                             AccountsConstants.MESSAGE_417_DELETE));
         }
+    }
+
+    @GetMapping("/contact-info")
+    public ResponseEntity<AccountsContactInfoDto> returnPropAccountInfo() {
+        return ResponseEntity.ok(this.accountsContactInfoDto);
     }
 }

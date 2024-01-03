@@ -6,9 +6,11 @@ import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import serg.shamiryan.accounts.dto.AccountsContactInfoDto;
 
 @SpringBootApplication
+@EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
 @OpenAPIDefinition(
         info = @Info(
                 title = "Account Microservices REST API Documentation",

@@ -1,0 +1,22 @@
+spring:
+  config:
+    activate:
+      on-profile: qa
+
+build:
+  version: "1.0"
+
+accounts:
+  profile: General
+  message: "Welcome to EazyBank accounts related local APIs "
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "john@eazybank.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
+  family:
+    member:
+      fullName:
+        name: Vardan
+        surname: Nikolyan

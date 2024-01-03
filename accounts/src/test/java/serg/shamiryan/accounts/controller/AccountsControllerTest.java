@@ -1,6 +1,7 @@
 package serg.shamiryan.accounts.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
 import org.mockito.BDDMockito;
@@ -30,15 +31,23 @@ class AccountsControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
+    private CustomerDto customerDto;
+
+    private Customer customer;
+
+    @BeforeEach
+    public void setup() {
+        this.customerDto = new CustomerDto();
+        customerDto.setMobileNumber("1234567891");
+        customerDto.setName("Test Name");
+        customerDto.setEmail("test@gmail.com");
+        this.customer = CustomerMapper.mapToCustomer(customerDto, new Customer());
+    }
+
     @Test
     public void givenCustomerDto_whenCreateAccount_thenReturnSavedCustomerWithAccount()
             throws Exception {
         //given - precondition or setup
-        CustomerDto customerDto = new CustomerDto();
-        customerDto.setMobileNumber("1234567891");
-        customerDto.setName("Test Name");
-        customerDto.setEmail("test@gmail.com");
-        Customer customer = CustomerMapper.mapToCustomer(customerDto, new Customer());
         BDDMockito.given(accountService.createAccount(ArgumentMatchers.any(CustomerDto.class)))
                 .willReturn(customer);
         //when - action or behaviour we are going to test
@@ -49,5 +58,20 @@ class AccountsControllerTest {
         //then - verify the output
         result.andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.status().isCreated());
+    }
+
+    @Test
+    public void givenCustomerDto_whenUpdateCustomer_thenReturnTrue() throws Exception {
+        //given - precondition or setup
+        BDDMockito.given(accountService.updateAccount(customerDto))
+                .willReturn(true);
+        //when - action or behaviour we are going to test
+        ResultActions result = mockMvc.perform(MockMvcRequestBuilders
+                .put("/api/update")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(customerDto)));
+        //then - verify the output
+        result.andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isOk());
     }
 }
