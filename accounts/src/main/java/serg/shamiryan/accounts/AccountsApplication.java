@@ -10,7 +10,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import serg.shamiryan.accounts.dto.AccountsContactInfoDto;
 
 @SpringBootApplication
-@EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
+@EnableConfigurationProperties(value = {AccountsContactInfoDto.class })
 @OpenAPIDefinition(
         info = @Info(
                 title = "Account Microservices REST API Documentation",
