@@ -1,10 +1,11 @@
 package serg.shamiryan.accounts.accountService;
 
 import serg.shamiryan.accounts.dto.CustomerDto;
+import serg.shamiryan.accounts.entity.Customer;
 
 public interface AccountService {
 
-    void createAccount(CustomerDto customerDto);
+    Customer createAccount(CustomerDto customerDto);
 
     CustomerDto fetchAccount(String mobileNumber);
 

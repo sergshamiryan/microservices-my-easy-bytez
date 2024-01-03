@@ -15,22 +15,21 @@ import serg.shamiryan.accounts.mapper.CustomerMapper;
 import serg.shamiryan.accounts.repository.AccountsRepository;
 import serg.shamiryan.accounts.repository.CustomerRepository;
 
-import java.time.LocalDateTime;
 import java.util.Random;
 
 @Service
 @RequiredArgsConstructor
 public class AccountServiceImpl implements AccountService {
-
     private final CustomerRepository customerRepository;
     private final AccountsRepository accountsRepository;
 
     @Override
     @Transactional
-    public void createAccount(CustomerDto customerDto) {
+    public Customer createAccount(CustomerDto customerDto) {
         Customer customer = CustomerMapper.mapToCustomer(customerDto, new Customer());
         Customer savedCustomer = customerRepository.save(customer);
         accountsRepository.save(this.createNewAccount(savedCustomer));
+        return customer;
     }
 
     private Accounts createNewAccount(Customer customer) {
