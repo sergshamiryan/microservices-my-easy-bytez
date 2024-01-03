@@ -7,16 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="loans" />
         <module name="cards" />
         <module name="accounts" />
+        <module name="loans" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="configserver" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accounts" options="-parameters" />
       <module name="cards" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="loans" options="-parameters" />
     </option>
   </component>
