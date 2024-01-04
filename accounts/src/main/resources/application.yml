@@ -1,6 +1,10 @@
 server:
   port:8080
 spring:
+  application:
+    name: "accounts"
+  profiles:
+    active: "prod"
   datasource:
     url: jdbc:h2:mem:testDb
     driver-class-name: org.h2.Driver
@@ -15,27 +19,15 @@ spring:
       ddl-auto: update
       show-sql: true
   config:
-    import:
-      - "application_qa.yml"
-      - "application_prod.yml"
-  profiles:
-    active:
-      - "qa"
+    import: "configserver:http://configserver:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: guest
+    password: guest
 
-build:
-  version: "1.0"
-
-accounts:
-  profile: General
-  message: "Welcome to EazyBank accounts related local APIs "
-  contactDetails:
-    name: "John Doe - Developer"
-    email: "john@eazybank.com"
-  onCallSupport:
-    - (555) 555-1234
-    - (555) 523-1345
-  family:
-    member:
-      fullName:
-        name: Vardan
-        surname: Nikolyan
+management:
+  endpoints:
+    web:
+      exposure:
+       include: "*"

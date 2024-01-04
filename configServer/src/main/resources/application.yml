@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+#    active: native
+     active: git
+  cloud:
+    config:
+      server:
+        native:
+#          search_locations: "classpath:/config"
+#          search_locations: "file:/C:/Users/lapta/IdeaProjects/microservices-my-easy-bytes/configServer/src/main/resources/config"
+        git:
+          uri: "https://github.com/eazybytes/eazybytes-config.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true #retrieve when starting app, not when the first request comes
+          force-pull: true #override all local changes when restarting config server
+
+encrypt:
+  key: "45D81EC1EF61DF9AD8D3E5BB397F9"
+  #The field value must be encrypted using
+  # /encrypt endpoint and the field in file must be put with {cipher}encryptionString
+
+server:
+  port: 8071
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
