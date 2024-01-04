@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea00fb06-76ba-4e31-94dd-859e52d1e564" name="Changes" comment="Spring Cloud Config Server Added">
+    <list default="true" id="ea00fb06-76ba-4e31-94dd-859e52d1e564" name="Changes" comment="Mysql Added">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/loans-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/loans-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/2024-01-03T10-58-07_555-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/2024-01-03T10-58-07_555-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/TEST-com.eazybytes.loans.LoansApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/com.eazybytes.loans.LoansApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/test-classes/com/eazybytes/loans/LoansApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,21 +30,21 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="startingFrom-section8-withoutconfigserver" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2aS25EeNxEZvZA1Hpb04FNg5nXG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,10 +62,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AccountsApplication.executor": "Run",
-    "Spring Boot.CardsApplication.executor": "Debug",
+    "Spring Boot.AccountsApplication.executor": "Debug",
+    "Spring Boot.CardsApplication.executor": "Run",
     "Spring Boot.ConfigServerApplication.executor": "Debug",
-    "git-widget-placeholder": "startingFrom-section8-withoutconfigserver",
+    "Spring Boot.LoansApplication.executor": "Debug",
+    "git-widget-placeholder": "startingFrom-section8-mysql-added",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/lapta/IdeaProjects/microservices-my-easy-bytes/docker-compose/qa",
@@ -66,7 +76,13 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -94,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountsApplication">
+  <component name="RunManager" selected="Spring Boot.CardsApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -123,14 +139,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="loans" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.loans.LoansApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.loans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.CardsApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.LoansApplication" />
       <item itemvalue="Spring Boot.AccountsApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Spring Boot.LoansApplication" />
         <item itemvalue="Spring Boot.AccountsApplication" />
       </list>
     </recent_temporary>
@@ -150,7 +181,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704297476621</updated>
-      <workItem from="1704297479365" duration="26707000" />
+      <workItem from="1704297479365" duration="27007000" />
+      <workItem from="1704373148282" duration="9481000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud Config Server Added">
       <option name="closed" value="true" />
@@ -168,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704368409038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mysql Added">
+      <option name="closed" value="true" />
+      <created>1704372759908</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704372759908</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +216,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring Cloud Config Server Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Config Server Added" />
+    <MESSAGE value="Mysql Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mysql Added" />
   </component>
 </project>

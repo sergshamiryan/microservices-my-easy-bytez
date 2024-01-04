@@ -16,11 +16,11 @@ spring:
 #      enabled: true
   jpa:
     show-sql: true
-    sql:
-      init:
-        mode: always
+  sql:
+    init:
+      mode: always
   config:
-    import: "configserver:http://localhost:8071/"
+    import: "optional:configserver:http://localhost:8071/"
 
 management:
   endpoints:
