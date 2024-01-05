@@ -4,23 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea00fb06-76ba-4e31-94dd-859e52d1e564" name="Changes" comment="Mysql Added">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="Eureka Server added">
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application-qa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/loans-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/loans-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/2024-01-03T10-58-07_555-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/2024-01-03T10-58-07_555-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/TEST-com.eazybytes.loans.LoansApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/surefire-reports/com.eazybytes.loans.LoansApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/test-classes/com/eazybytes/loans/LoansApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,59 +27,51 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="startingFrom-section8-withoutconfigserver" />
+        <entry key="$PROJECT_DIR$" value="startingFrom-section8-mysql-added" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2aS25EeNxEZvZA1Hpb04FNg5nXG" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2aVPhOqt4exSa70G4oWKAwfTKTo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Maven.accounts [clean,compile].executor": "Run",
-    "Maven.accounts [clean,package].executor": "Run",
-    "Maven.accounts [clean].executor": "Run",
+    "Maven.cards [clean,compile].executor": "Run",
+    "Maven.eurekaserver [clean,compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AccountsApplication.executor": "Debug",
-    "Spring Boot.CardsApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Debug",
-    "Spring Boot.LoansApplication.executor": "Debug",
-    "git-widget-placeholder": "startingFrom-section8-mysql-added",
+    "Spring Boot.CardsApplication.executor": "Debug",
+    "Spring Boot.EurekaserverApplication.executor": "Debug",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "git-widget-placeholder": "startingFrom-section8-eureka-server-added",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lapta/IdeaProjects/microservices-my-easy-bytes/docker-compose/qa",
+    "last_opened_file_path": "C:/Users/lapta/IdeaProjects/microservices-my-easy-bytes/eurekaserver/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -90,15 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lapta\IdeaProjects\microservices-my-easy-bytes\docker-compose\qa" />
-      <recent name="C:\Users\lapta\IdeaProjects\microservices-my-easy-bytes\docker-compose\prod" />
-      <recent name="C:\Users\lapta\IdeaProjects\microservices-my-easy-bytes\configServer\src\main\resources\config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lapta\IdeaProjects\microservices-my-easy-bytes\docker-compose\default" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="serg.shamiryan.accounts.repository" />
+      <recent name="C:\Users\lapta\IdeaProjects\microservices-my-easy-bytes\eurekaserver\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,14 +91,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CardsApplication">
+  <component name="RunManager" selected="Spring Boot.AccountsApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.accounts.AccountsApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="serg.shamiryan.accounts.repository.*" />
+          <option name="PATTERN" value="serg.shamiryan.accounts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,9 +113,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="configServer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.configserver.ConfigServerApplication" />
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.eurekaserver.EurekaserverApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,16 +134,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.CardsApplication" />
-      <item itemvalue="Spring Boot.ConfigServerApplication" />
-      <item itemvalue="Spring Boot.LoansApplication" />
-      <item itemvalue="Spring Boot.AccountsApplication" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.LoansApplication" />
         <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Spring Boot.LoansApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -176,47 +151,33 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ea00fb06-76ba-4e31-94dd-859e52d1e564" name="Changes" comment="" />
-      <created>1704297476621</created>
+      <changelist id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="" />
+      <created>1704400891541</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704297476621</updated>
-      <workItem from="1704297479365" duration="27007000" />
-      <workItem from="1704373148282" duration="9481000" />
+      <updated>1704400891541</updated>
+      <workItem from="1704400892626" duration="10713000" />
     </task>
-    <task id="LOCAL-00001" summary="Spring Cloud Config Server Added">
+    <task id="LOCAL-00001" summary="Eureka Server added">
       <option name="closed" value="true" />
-      <created>1704297600691</created>
+      <created>1704401014430</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1704297600691</updated>
+      <updated>1704401014430</updated>
     </task>
-    <task id="LOCAL-00002" summary="Spring Cloud Config Server Added">
-      <option name="closed" value="true" />
-      <created>1704368409038</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1704368409038</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Mysql Added">
-      <option name="closed" value="true" />
-      <created>1704372759908</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1704372759908</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring Cloud Config Server Added" />
-    <MESSAGE value="Mysql Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mysql Added" />
+    <MESSAGE value="Eureka Server added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eureka Server added" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
