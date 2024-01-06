@@ -1,4 +1,4 @@
-package serg.shamiryan.accounts.accountService;
+package serg.shamiryan.accounts.service;
 
 import serg.shamiryan.accounts.dto.CustomerDto;
 import serg.shamiryan.accounts.entity.Customer;

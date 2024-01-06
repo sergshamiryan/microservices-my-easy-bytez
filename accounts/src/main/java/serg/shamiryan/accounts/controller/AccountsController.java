@@ -14,7 +14,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import serg.shamiryan.accounts.accountService.AccountService;
+import serg.shamiryan.accounts.service.AccountService;
 import serg.shamiryan.accounts.constants.AccountsConstants;
 import serg.shamiryan.accounts.dto.AccountsContactInfoDto;
 import serg.shamiryan.accounts.dto.CustomerDto;

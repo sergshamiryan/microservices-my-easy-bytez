@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import serg.shamiryan.accounts.accountService.impl.AccountServiceImpl;
+import serg.shamiryan.accounts.service.impl.AccountServiceImpl;
 import serg.shamiryan.accounts.dto.CustomerDto;
 import serg.shamiryan.accounts.entity.Customer;
 import serg.shamiryan.accounts.mapper.CustomerMapper;

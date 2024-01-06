@@ -6,7 +6,7 @@ import org.mockito.BDDMockito;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import serg.shamiryan.accounts.accountService.impl.AccountServiceImpl;
+import serg.shamiryan.accounts.service.impl.AccountServiceImpl;
 import serg.shamiryan.accounts.dto.CustomerDto;
 import serg.shamiryan.accounts.entity.Accounts;
 import serg.shamiryan.accounts.entity.Customer;

@@ -1,9 +1,9 @@
-package serg.shamiryan.accounts.accountService.impl;
+package serg.shamiryan.accounts.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import serg.shamiryan.accounts.accountService.AccountService;
+import serg.shamiryan.accounts.service.AccountService;
 import serg.shamiryan.accounts.constants.AccountsConstants;
 import serg.shamiryan.accounts.dto.AccountsDto;
 import serg.shamiryan.accounts.dto.CustomerDto;
