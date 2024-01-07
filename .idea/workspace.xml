@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="All services use Eureka Discovery Service">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/dto/CardsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/dto/CustomerDetailsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/dto/LoansDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/mapper/CustomerDetailDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/client/CardsFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/client/LoansFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
+    <list default="true" id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="OpenFeign tested @Link CardsFeignClient, used in CustomerService">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/AccountsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/accountService/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/accountService/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/test/java/serg/shamiryan/accounts/accountService/AccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/test/java/serg/shamiryan/accounts/accountService/AccountServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/test/java/serg/shamiryan/accounts/controller/AccountsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/test/java/serg/shamiryan/accounts/controller/AccountsControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/mapper/CardsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/mapper/CardsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -67,11 +51,13 @@
   "keyToString": {
     "Docker.default.accountsdb: Compose Deployment.executor": "Run",
     "Docker.default.cardsdb: Compose Deployment.executor": "Run",
+    "Docker.default.eurekaserver: Compose Deployment.executor": "Run",
     "Docker.default.loansdb: Compose Deployment.executor": "Run",
     "Maven.accounts [clean].executor": "Run",
     "Maven.accounts [compile].executor": "Run",
     "Maven.cards [clean,compile].executor": "Run",
     "Maven.eurekaserver [clean,compile].executor": "Run",
+    "Maven.loans [clean,compile].executor": "Run",
     "Maven.loans [clean].executor": "Run",
     "Maven.loans [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -129,7 +115,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountsApplication">
+  <component name="RunManager" selected="Docker.default.loansdb: Compose Deployment">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -189,12 +175,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="default.cardsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="default.eurekaserver: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="cardsdb" />
+              <option value="eurekaserver" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
@@ -217,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AccountsApplication" />
-        <item itemvalue="Spring Boot.LoansApplication" />
-        <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
-        <item itemvalue="Docker.default.cardsdb: Compose Deployment" />
         <item itemvalue="Docker.default.loansdb: Compose Deployment" />
+        <item itemvalue="Docker.default.eurekaserver: Compose Deployment" />
+        <item itemvalue="Spring Boot.LoansApplication" />
+        <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +227,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704400891541</updated>
       <workItem from="1704400892626" duration="14712000" />
-      <workItem from="1704565038374" duration="7229000" />
+      <workItem from="1704565038374" duration="23693000" />
     </task>
     <task id="LOCAL-00001" summary="Eureka Server added">
       <option name="closed" value="true" />
@@ -259,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704451674134</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="OpenFeign tested @Link CardsFeignClient, used in CustomerService">
+      <option name="closed" value="true" />
+      <created>1704572503206</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704572503206</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +262,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Eureka Server added" />
     <MESSAGE value="All services use Eureka Discovery Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="All services use Eureka Discovery Service" />
+    <MESSAGE value="OpenFeign tested @Link CardsFeignClient, used in CustomerService" />
+    <option name="LAST_COMMIT_MESSAGE" value="OpenFeign tested @Link CardsFeignClient, used in CustomerService" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

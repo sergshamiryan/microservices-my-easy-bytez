@@ -16,16 +16,21 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
 
-  microservice-base-config:
+  microservice-nonDb-base-config:
     extends:
       service: network-deploy-service
     deploy:
       resources:
         limits:
           memory: 700m
+
+  microservice-base-config:
+    extends:
+      service: microservice-nonDb-base-config
     environment:
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
 
   microservice-configserver-config:
     extends:

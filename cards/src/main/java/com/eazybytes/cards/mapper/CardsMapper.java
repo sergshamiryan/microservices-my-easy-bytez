@@ -24,5 +24,4 @@ public class CardsMapper {
         cards.setAmountUsed(cardsDto.getAmountUsed());
         return cards;
     }
-
 }
