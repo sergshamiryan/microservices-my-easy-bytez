@@ -2,16 +2,16 @@ spring:
   application:
     name: "configserver"
   profiles:
-#    active: native
-     active: git
+    active: native
+#     active: git
   cloud:
     config:
       server:
         native:
-#          search_locations: "classpath:/config"
+          search_locations: "classpath:/config"
 #          search_locations: "file:/C:/Users/lapta/IdeaProjects/microservices-my-easy-bytes/configServer/src/main/resources/config"
-        git:
-          uri: "https://github.com/eazybytes/eazybytes-config.git"
+#        git:
+#          uri: "https://github.com/eazybytes/eazybytes-config.git"
           default-label: main
           timeout: 5
           clone-on-start: true #retrieve when starting app, not when the first request comes
