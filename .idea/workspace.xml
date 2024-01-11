@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="OpenFeign tested @Link CardsFeignClient, used in CustomerService">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/mapper/CardsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/mapper/CardsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="OpenFeign tested @Link CardsFeignClient, used in CustomerService" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,8 +42,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.default.accounts: Compose Deployment.executor": "Run",
     "Docker.default.accountsdb: Compose Deployment.executor": "Run",
+    "Docker.default.cards: Compose Deployment.executor": "Run",
     "Docker.default.cardsdb: Compose Deployment.executor": "Run",
+    "Docker.default.configServer: Compose Deployment.executor": "Run",
     "Docker.default.eurekaserver: Compose Deployment.executor": "Run",
     "Docker.default.loansdb: Compose Deployment.executor": "Run",
     "Maven.accounts [clean].executor": "Run",
@@ -71,10 +67,9 @@
     "Spring Boot.CardsApplication.executor": "Debug",
     "Spring Boot.EurekaserverApplication.executor": "Debug",
     "Spring Boot.LoansApplication.executor": "Debug",
-    "git-widget-placeholder": "startingFrom-section8-eureka-server-added",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lapta/IdeaProjects/microservices-my-easy-bytes/eurekaserver/src/main/resources",
+    "last_opened_file_path": "C:/Users/sergey.shamiryan/IdeaProjects/microservices-my-easy-bytez/docker-compose/prod",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,7 +94,11 @@
       <recent name="serg.shamiryan.accounts.dto.CardsDto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sergey.shamiryan\IdeaProjects\microservices-my-easy-bytez\docker-compose\prod" />
       <recent name="C:\Users\lapta\IdeaProjects\microservices-my-easy-bytes\eurekaserver\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sergey.shamiryan\IdeaProjects\microservices-my-easy-bytez\docker-compose\prod" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="serg.shamiryan.accounts.service.client" />
@@ -116,20 +115,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Docker.default.loansdb: Compose Deployment">
-    <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="accounts" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.accounts.AccountsApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="serg.shamiryan.accounts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cards" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.cards.CardsApplication" />
@@ -144,22 +129,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="loans" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.loans.LoansApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.eazybytes.loans.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default.accounts: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="accounts" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="default.accountsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -175,12 +161,25 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="default.eurekaserver: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="default.cards: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="eurekaserver" />
+              <option value="cards" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default.cardsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="cardsdb" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
@@ -204,17 +203,17 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.default.loansdb: Compose Deployment" />
-        <item itemvalue="Docker.default.eurekaserver: Compose Deployment" />
-        <item itemvalue="Spring Boot.LoansApplication" />
-        <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Docker.default.cardsdb: Compose Deployment" />
+        <item itemvalue="Docker.default.cards: Compose Deployment" />
         <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
+        <item itemvalue="Docker.default.accounts: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-3183f394aec4-38982a12" />
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-3183f394aec4-cb300fc7" />
       </set>
     </attachedChunks>
   </component>
@@ -228,6 +227,7 @@
       <updated>1704400891541</updated>
       <workItem from="1704400892626" duration="14712000" />
       <workItem from="1704565038374" duration="23693000" />
+      <workItem from="1704966044450" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="Eureka Server added">
       <option name="closed" value="true" />
