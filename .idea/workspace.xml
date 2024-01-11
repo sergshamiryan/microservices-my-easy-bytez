@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="OpenFeign tested @Link CardsFeignClient, used in CustomerService">
+    <list default="true" id="69281b02-76ed-4688-9b01-6bfc9cbfcbfa" name="Changes" comment="Working state">
+      <change afterPath="$PROJECT_DIR$/gatewayservice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/src/main/java/serg/shamiryan/gatewayservice/GatewayserviceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayservice/src/test/java/serg/shamiryan/gatewayservice/GatewayserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/mapper/CardsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/mapper/CardsMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="startingFrom-section8-mysql-added" />
+        <entry key="$PROJECT_DIR$" value="startingFrom-section8-eureka-server-added" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,7 +77,7 @@
     &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;startingFrom-section8-eureka-server-added&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;startingFrom-section9-gateway-service&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/lapta/IdeaProjects/microservices-my-easy-bytes/eurekaserver/src/main/resources&quot;,
@@ -229,7 +237,8 @@
       <workItem from="1704400892626" duration="14712000" />
       <workItem from="1704565038374" duration="23693000" />
       <workItem from="1704736174136" duration="4002000" />
-      <workItem from="1704904520193" duration="944000" />
+      <workItem from="1704904520193" duration="2105000" />
+      <workItem from="1704990714287" duration="446000" />
     </task>
     <task id="LOCAL-00001" summary="Eureka Server added">
       <option name="closed" value="true" />
@@ -255,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704572503206</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Working state">
+      <option name="closed" value="true" />
+      <created>1704989289232</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704989289232</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +282,8 @@
     <MESSAGE value="Eureka Server added" />
     <MESSAGE value="All services use Eureka Discovery Service" />
     <MESSAGE value="OpenFeign tested @Link CardsFeignClient, used in CustomerService" />
-    <option name="LAST_COMMIT_MESSAGE" value="OpenFeign tested @Link CardsFeignClient, used in CustomerService" />
+    <MESSAGE value="Working state" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working state" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
