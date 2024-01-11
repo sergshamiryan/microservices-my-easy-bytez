@@ -67,6 +67,7 @@
     "Spring Boot.CardsApplication.executor": "Debug",
     "Spring Boot.EurekaserverApplication.executor": "Debug",
     "Spring Boot.LoansApplication.executor": "Debug",
+    "git-widget-placeholder": "startingFrom-section8-eureka-server-added",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/sergey.shamiryan/IdeaProjects/microservices-my-easy-bytez/docker-compose/prod",
@@ -214,6 +215,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-1.8.0_392-corretto-1.8.0_392-3183f394aec4-cb300fc7" />
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-f644763e9732-f719d367" />
       </set>
     </attachedChunks>
   </component>
