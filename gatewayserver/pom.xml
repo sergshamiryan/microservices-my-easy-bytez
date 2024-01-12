@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>serg.shamiryan</groupId>
-    <artifactId>gatewayservice</artifactId>
+    <artifactId>gatewayserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gatewayservice</name>
     <description>gatewayservice</description>

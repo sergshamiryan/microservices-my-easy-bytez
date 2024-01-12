@@ -1,10 +1,10 @@
-package serg.shamiryan.gatewayservice;
+package serg.shamiryan.gatewayserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GatewayserviceApplicationTests {
+class GatewayserverApplicationTests {
 
     @Test
     void contextLoads() {

@@ -34,10 +34,6 @@ management:
     env:
       enabled: true
 
-endpoints:
-  shutdown:
-    enabled: true
-
 eureka:
   instance:
     # By Default it will register via hostname, but it will make sense when we
@@ -56,5 +52,5 @@ eureka:
 info:
   app:
     name: "accounts"
-    description: "Sergshamiryan Bank Accounts Application"
+    description: "Sergshamiryan Bank accounts Application"
     version: "1.0.0"
