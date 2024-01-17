@@ -19,11 +19,11 @@ public class CustomerServiceImpl implements CustomerService {
     private final CardsFeignClient cardsFeignClient;
 
     @Override
-    public CustomerDetailsDto fetchCustomerDto(String mobileNumber) {
+    public CustomerDetailsDto fetchCustomerDto(String mobileNumber, String correlationId) {
         CustomerDto customerDto = accountService.fetchAccount(mobileNumber);
         return CustomerDetailDtoMapper.mapTocustomerDetailsDto(
                 customerDto,
                 cardsFeignClient.fetchCardDetails(mobileNumber).getBody(),
-                loansFeignClient.fetchLoanDetails(mobileNumber).getBody());
+                loansFeignClient.fetchLoanDetails(correlationId, mobileNumber).getBody());
     }
 }

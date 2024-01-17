@@ -4,18 +4,18 @@ spring:
   application:
     name: "cards"
   datasource:
-#    url: jdbc:h2:mem:testdb
+    #    url: jdbc:h2:mem:testdb
     url: jdbc:mysql://localhost:3308/cardsdb
-#    driverClassName: org.h2.Driver
+    #    driverClassName: org.h2.Driver
     username: root
     password: root
-#  h2:
-#    console:
-#      enabled: true
+  #  h2:
+  #    console:
+  #      enabled: true
   jpa:
-#    database-platform: org.hibernate.dialect.H2Dialect
-#    hibernate:
-#      ddl-auto: update
+    #    database-platform: org.hibernate.dialect.H2Dialect
+    #    hibernate:
+    #      ddl-auto: update
     show-sql: true
   sql:
     init:
@@ -36,8 +36,16 @@ management:
   endpoint:
     shutdown:
       enabled: true
+    health:
+      probes:
+        enabled: true
   info:
     env:
+      enabled: true
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
       enabled: true
 
 endpoints:

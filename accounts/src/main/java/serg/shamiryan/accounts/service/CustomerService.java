@@ -4,5 +4,5 @@ import serg.shamiryan.accounts.dto.CustomerDetailsDto;
 
 public interface CustomerService {
 
-    CustomerDetailsDto fetchCustomerDto(String mobileNumber);
+    CustomerDetailsDto fetchCustomerDto(String mobileNumber, String correlationId);
 }

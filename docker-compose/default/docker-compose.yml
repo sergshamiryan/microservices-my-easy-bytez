@@ -40,7 +40,7 @@ services:
       #communication within docker containers
       SPRING_DATASOURCE_URL: "jdbc:mysql://accountsdb:3306/accountsdb"
     depends_on:
-      configServer:
+      configserver:
         condition: service_healthy
       eurekaserver:
         condition: service_healthy
@@ -90,7 +90,7 @@ services:
       file: common-config.yml
       service: microservice-base-config
 
-  configServer:
+  configserver:
     image: "sergshamriyan/configserver:latest"
     container_name: "configserver-ms"
     ports:
@@ -125,6 +125,24 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: default
       SPRING_APPLICATION_NAME: "eurekaserver"
+
+  gatewayserver:
+    image: "sergshamriyan/gatewayserver:latest"
+    container_name: "gatewayserver-ms"
+    ports:
+      - "8072:8072"
+    healthcheck:
+      test: "curl --fail --silent localhost:8072/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s #With timeout of 10 sec
+      timeout: 5s #Inside each check don`t wait more than 5 sec
+      retries: 10 #Retry 10 times
+      start_period: 10s #After 10 sec
+    extends:
+      file: common-config.yml
+      service: microservice-nonDb-base-config-with-eureka
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SPRING_APPLICATION_NAME: "gatewayserver"
 
 networks:
   sergshamiryan:

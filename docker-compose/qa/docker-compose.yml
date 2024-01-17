@@ -24,7 +24,7 @@ services:
     environment:
       SPRING_APPLICATION_NAME: "accounts"
     depends_on:
-      configServer:
+      configserver:
         condition: service_healthy
     extends:
       file: common-config.yml
@@ -54,7 +54,7 @@ services:
       file: common-config.yml
       service: microservice-base-config
 
-  configServer:
+  configserver:
     image: "sergshamriyan/configserver:latest"
     container_name: "configserver-ms"
     ports:

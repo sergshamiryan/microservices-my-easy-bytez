@@ -11,7 +11,7 @@
 	<groupId>serg.shamiryan</groupId>
 	<artifactId>configserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>configServer</name>
+	<name>configserver</name>
 	<description>configServer</description>
 	<properties>
 		<java.version>17</java.version>

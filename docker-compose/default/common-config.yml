@@ -24,19 +24,24 @@ services:
         limits:
           memory: 700m
 
+  microservice-nonDb-base-config-with-eureka:
+    extends:
+      service: microservice-nonDb-base-config
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+
   microservice-base-config:
     extends:
       service: microservice-nonDb-base-config
     environment:
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
-      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
 
   microservice-configserver-config:
     extends:
       service: microservice-base-config
     depends_on:
-      configServer:
+      configserver:
         condition: service_healthy
     environment:
       SPRING_CONFIG_IMPORT: "optional:configserver:http://configserver:8071/"

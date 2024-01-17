@@ -7,13 +7,11 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import serg.shamiryan.accounts.dto.CustomerDetailsDto;
 import serg.shamiryan.accounts.dto.ErrorResponseDto;
 import serg.shamiryan.accounts.service.CustomerService;
@@ -21,10 +19,11 @@ import serg.shamiryan.accounts.service.CustomerService;
 @Tag(
         name = "For getting Customer related  information"
 )
-@RestController
-@RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
+@Log4j2
 @Validated
+@RestController
 @RequiredArgsConstructor
+@RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 public class CustomerController {
 
     public final CustomerService customerService;
@@ -42,9 +41,9 @@ public class CustomerController {
             )})
     @GetMapping("/fetchCustomerDetails")
     public ResponseEntity<CustomerDetailsDto> fetchCustomerDto(
-            @RequestParam
-            @Pattern(regexp = "(^$|[0-9]{10})")
-            String mobileNumber) {
-        return ResponseEntity.ok(customerService.fetchCustomerDto(mobileNumber));
+            @RequestHeader("shamiryanbank-correlation-id") String correlationId,
+            @RequestParam @Pattern(regexp = "(^$|[0-9]{10})") String mobileNumber) {
+        log.debug("shamiryanbank-correlation-id foung {}: ",correlationId);
+        return ResponseEntity.ok(customerService.fetchCustomerDto(mobileNumber,correlationId));
     }
 }
