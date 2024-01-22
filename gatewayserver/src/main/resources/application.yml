@@ -56,3 +56,11 @@ info:
     name: "gatewayservice"
     description: "Sergshamiryan bank gateway server application"
     version: "1.0.0"
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10 #How many requests to monitor before changing state from close to open
+      permittedNumberOfCallsInHalfOpenState: 2 #How many calls to do for checking if the service got up
+      failureRateThreshold: 50 #If at least 50% of requests fail, go to open state
+      waitDurationInOpenState: 10000 #Wait ten seconds then move to half open state(partial traffic)

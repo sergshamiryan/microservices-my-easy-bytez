@@ -27,7 +27,10 @@ public class GatewayserverApplication {
                                         "/${segment}")
                                 .addResponseHeader(
                                         "X-Response-Time",
-                                        LocalDateTime.now().toString()))
+                                        LocalDateTime.now().toString())
+                                .circuitBreaker(config -> config.setName("accountCircuitBreaker")
+                                        .setFallbackUri("forward:/contactSupport"))
+                        )
                         .uri("lb://ACCOUNTS"))
                 .route(p -> p
                         .path("/shamiryanbank/loans/**")

@@ -21,6 +21,10 @@ spring:
       mode: always
   config:
     import: "optional:configserver:http://localhost:8071/"
+  cloud:
+    openfeign:
+      circuitBreaker:
+        enabled: true
 
 management:
   endpoints:

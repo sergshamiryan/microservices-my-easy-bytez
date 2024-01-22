@@ -13,7 +13,7 @@ import serg.shamiryan.accounts.dto.CardsDto;
  * cloud load balancer and after performing load balancing
  * strategy, it will call one of the service instances
  * */
-@FeignClient("cards")
+@FeignClient(name = "cards", fallback = CardsFallback.class)
 public interface CardsFeignClient {
 
     @GetMapping(value = "/api/fetch", consumes = MediaType.APPLICATION_JSON_VALUE)
