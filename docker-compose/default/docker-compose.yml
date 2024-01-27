@@ -1,4 +1,16 @@
 services:
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD-SHELL","redis-cli ping | grep PONG"]
+      timeout: 10
+      retries: 10
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+
   accountsdb:
     container_name: accountsdb
     ports:
@@ -137,12 +149,24 @@ services:
       timeout: 5s #Inside each check don`t wait more than 5 sec
       retries: 10 #Retry 10 times
       start_period: 10s #After 10 sec
-    extends:
-      file: common-config.yml
-      service: microservice-nonDb-base-config-with-eureka
+    depends_on:
+      accounts:
+        condition: service_healthy
+      cards:
+        condition: service_healthy
+      loans:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
     environment:
       SPRING_PROFILES_ACTIVE: default
       SPRING_APPLICATION_NAME: "gatewayserver"
+      SPRING_DATA_REDIS_CONNECT-TIMEOUT: 2S
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+    extends:
+      file: common-config.yml
+      service: microservice-nonDb-base-config-with-eureka
 
 networks:
   sergshamiryan:

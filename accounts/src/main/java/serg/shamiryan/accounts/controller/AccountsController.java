@@ -1,5 +1,7 @@
 package serg.shamiryan.accounts.controller;
 
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -14,12 +16,15 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import serg.shamiryan.accounts.service.AccountService;
 import serg.shamiryan.accounts.constants.AccountsConstants;
 import serg.shamiryan.accounts.dto.AccountsContactInfoDto;
 import serg.shamiryan.accounts.dto.CustomerDto;
 import serg.shamiryan.accounts.dto.ErrorResponseDto;
 import serg.shamiryan.accounts.dto.ResponseDto;
+import serg.shamiryan.accounts.service.AccountService;
+
+import java.util.Collections;
+import java.util.Map;
 
 @Tag(
         name = "Account Service for managing accounts",
@@ -110,5 +115,26 @@ public class AccountsController {
     @GetMapping("/contact-info")
     public ResponseEntity<AccountsContactInfoDto> returnPropAccountInfo() {
         return ResponseEntity.ok(this.accountsContactInfoDto);
+    }
+
+    @Retry(name = "testRetry", fallbackMethod = "testRetryFallback"/*Fallback's is method name*/)
+    @GetMapping("/test-retry")
+    public ResponseEntity<Map<String, String>> retryTest() {
+        return ResponseEntity.ok(Collections.singletonMap("Message", "Retry endpoint"));
+    }
+
+    public ResponseEntity<Map<String, String>> retryTestFallback(Throwable throwable) {
+        return ResponseEntity.ok(Collections.singletonMap("Message", "Default Value"));
+    }
+
+    @RateLimiter(name = "getJavaVersion", fallbackMethod = "getJavaVersionFallback")
+    @GetMapping("/java-version")
+    public ResponseEntity<String> getJavaVersion() {
+        String JAVA_HOME = System.getenv("JAVA_HOME");
+        return ResponseEntity.ok(JAVA_HOME);
+    }
+
+    public ResponseEntity<String> getJavaVersionFallback(Throwable throwable) {
+        return ResponseEntity.ok("Default Java Version");
     }
 }

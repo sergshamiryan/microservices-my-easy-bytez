@@ -6,14 +6,14 @@ spring:
   profiles:
     active: "prod"
   datasource:
-#    url: jdbc:h2:mem:testDb
+    #    url: jdbc:h2:mem:testDb
     url: jdbc:mysql://localhost:3310/accountsdb
-#    driver-class-name: org.h2.Driver
+    #    driver-class-name: org.h2.Driver
     username: root
     password: root
-#  h2:
-#    console:
-#      enabled: true
+  #  h2:
+  #    console:
+  #      enabled: true
   jpa:
     show-sql: true
   sql:
@@ -30,7 +30,7 @@ management:
   endpoints:
     web:
       exposure:
-       include: "*"
+        include: "*"
   endpoint:
     shutdown:
       enabled: true
@@ -58,3 +58,34 @@ info:
     name: "accounts"
     description: "Sergshamiryan Bank accounts Application"
     version: "1.0.0"
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindow: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
+
+resilience4j.retry:
+  configs:
+    default:
+      maxRetryAttempts: 3
+      waitDuration: 100
+      enableExponentialBackoff: true
+      exponentBackoffMultiplier: 2
+      ignoreExceptions:
+        - java.lang.NullPointerException
+      retryExceptions:
+        - java.util.concurrent.TimeoutException #All exceptions will be ignored but timeoutException
+
+resilience4j.rateLimiter:
+  configs:
+    default:
+      #maximum time a thread is willing to wait for permission to proceed through
+      #the rate-limited section of code.
+      #If the waiting time exceeds this duration, the thread will give up,
+      #and the rate-limited request will be handled based on your defined policies.
+      timeoutDuration: 1000
+      limitRefreshPeriod: 5000 #For every 5 seconds renew the quota
+      limitForPeriod: 100 #For every 5 seconds 100 requests is allowed
