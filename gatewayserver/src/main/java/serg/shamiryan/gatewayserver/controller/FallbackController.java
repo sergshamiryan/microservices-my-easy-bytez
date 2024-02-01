@@ -1,4 +1,4 @@
-package serg.shamiryan.gatewayserver.filters.controller;
+package serg.shamiryan.gatewayserver.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

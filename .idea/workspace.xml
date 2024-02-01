@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c6ae2d8-221a-46e8-8fd2-acfbdae95d13" name="Changes" comment="All patterns covered, docker compose yml is updated">
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/config/KeyCloakConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/filters/controller/FallbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/controller/FallbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +51,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Maven.gatewayserver [clean,compile].executor": "Run",
+    "Maven.gatewayserver [clean].executor": "Run",
+    "Maven.gatewayserver [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -64,10 +72,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.27701148",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "google-java-format.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -155,7 +164,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-3183f394aec4-38982a12" />
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
       </set>
     </attachedChunks>
   </component>
@@ -176,6 +186,7 @@
       <workItem from="1705774621586" duration="4692000" />
       <workItem from="1705815117797" duration="4236000" />
       <workItem from="1706067945911" duration="23775000" />
+      <workItem from="1706696744181" duration="13410000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -203,5 +214,15 @@
     <MESSAGE value="Circuit breaker added" />
     <MESSAGE value="All patterns covered, docker compose yml is updated" />
     <option name="LAST_COMMIT_MESSAGE" value="All patterns covered, docker compose yml is updated" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
