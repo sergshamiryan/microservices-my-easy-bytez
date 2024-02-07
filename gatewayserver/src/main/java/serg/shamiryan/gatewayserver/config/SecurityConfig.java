@@ -26,7 +26,8 @@ public class SecurityConfig {
                         .pathMatchers("/shamiryanbank/cards/**").hasRole("CARDS")
                         .pathMatchers("/shamiryanbank/loans/**").hasRole("LOANS"))
                 .oauth2ResourceServer(oAuth2ResourceServerSpec -> oAuth2ResourceServerSpec
-                        .jwt(jwtSpec -> jwtSpec.jwtAuthenticationConverter(grantedAuthoritiesExtractor())))
+                        .jwt(jwtSpec -> jwtSpec.jwtAuthenticationConverter(
+                                grantedAuthoritiesExtractor())))
                 .csrf(CsrfSpec::disable).build();
     }
 

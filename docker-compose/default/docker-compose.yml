@@ -40,6 +40,9 @@ services:
       - ./realms/:/opt/keycloak/data/import/
     depends_on:
       - keycloak-mysql
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
 
   accountsdb:
     container_name: accountsdb
@@ -194,6 +197,7 @@ services:
       SPRING_DATA_REDIS_CONNECT-TIMEOUT: 2S
       SPRING_DATA_REDIS_HOST: redis
       SPRING_DATA_REDIS_PORT: 6379
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: http://localhost:8080/realms/master/protocol/openid-connect/certs
     extends:
       file: common-config.yml
       service: microservice-nonDb-base-config-with-eureka

@@ -1,0 +1,19 @@
+Index: accounts/src/main/java/serg/shamiryan/accounts/dto/AccountsDto.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package serg.shamiryan.accounts.dto;\r\n\r\nimport io.swagger.v3.oas.annotations.media.Schema;\r\nimport jakarta.validation.constraints.NotEmpty;\r\nimport jakarta.validation.constraints.Pattern;\r\nimport lombok.Data;\r\n\r\n@Data\r\npublic class AccountsDto {\r\n\r\n    @Schema(\r\n            description = \"Account number in Shamiryan Bank\",\r\n            example = \"1234567891\"\r\n    )\r\n    @NotEmpty(message = \"AccountNumber cannot be empty or null\")\r\n    @Pattern(regexp = \"(^$|[0-9]{10})\",message = \"AccountNumber must have 10 digits\")\r\n    private Long accountNumber;\r\n\r\n    @NotEmpty(message = \"AccountType cannot be empty or null\")\r\n    private String accountType;\r\n\r\n    @NotEmpty(message = \"BranchAddress cannot be empty or null\")\r\n    private String branchAddress;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/accounts/src/main/java/serg/shamiryan/accounts/dto/AccountsDto.java b/accounts/src/main/java/serg/shamiryan/accounts/dto/AccountsDto.java
+--- a/accounts/src/main/java/serg/shamiryan/accounts/dto/AccountsDto.java	
++++ b/accounts/src/main/java/serg/shamiryan/accounts/dto/AccountsDto.java	
+@@ -13,7 +13,7 @@
+             example = "1234567891"
+     )
+     @NotEmpty(message = "AccountNumber cannot be empty or null")
+-    @Pattern(regexp = "(^$|[0-9]{10})",message = "AccountNumber must have 10 digits")
++    @Pattern(regexp = "(^$|[0-9]{10})", message = "AccountNumber must have 10 digits")
+     private Long accountNumber;
+ 
+     @NotEmpty(message = "AccountType cannot be empty or null")
