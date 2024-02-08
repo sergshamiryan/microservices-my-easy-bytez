@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/configServer/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
         <option value="$PROJECT_DIR$/gatewayserver/pom.xml" />
+        <option value="$PROJECT_DIR$/messages/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

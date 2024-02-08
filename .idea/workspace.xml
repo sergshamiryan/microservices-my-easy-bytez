@@ -5,296 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c6ae2d8-221a-46e8-8fd2-acfbdae95d13" name="Changes" comment="Intermediate commit added keycloak to docker compose">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_01_2024_10_51_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_01_2024_10_51_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/auto.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/ca-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/ca.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/client-cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/client-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/ib_buffer_pool" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/ib_logfile0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/ib_logfile1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/ibdata1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/ibtmp1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/keycloak/db.opt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/columns_priv.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/columns_priv.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/columns_priv.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/db.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/db.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/db.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/db.opt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/engine_cost.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/engine_cost.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/event.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/event.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/event.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/func.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/func.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/func.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/general_log.CSM" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/general_log.CSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/general_log.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/gtid_executed.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/gtid_executed.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_category.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_category.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_keyword.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_keyword.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_relation.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_relation.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_topic.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/help_topic.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/innodb_index_stats.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/innodb_index_stats.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/innodb_table_stats.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/innodb_table_stats.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/ndb_binlog_index.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/ndb_binlog_index.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/ndb_binlog_index.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/plugin.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/plugin.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/proc.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/proc.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/proc.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/procs_priv.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/procs_priv.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/procs_priv.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/proxies_priv.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/proxies_priv.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/proxies_priv.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/server_cost.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/server_cost.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/servers.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/servers.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slave_master_info.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slave_master_info.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slave_relay_log_info.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slave_relay_log_info.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slave_worker_info.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slave_worker_info.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slow_log.CSM" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slow_log.CSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/slow_log.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/tables_priv.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/tables_priv.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/tables_priv.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_leap_second.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_leap_second.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_name.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_transition.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_transition.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_transition_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/time_zone_transition_type.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/user.MYD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/user.MYI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/mysql/user.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/accounts.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/cond_instances.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/db.opt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_current.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_history.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_history_long.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_summary_by_account_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_summary_by_host_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_summary_by_thread_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_summary_by_user_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_stages_summary_global_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_current.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_history.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_history_long.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_summary_by_account_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_summary_by_digest.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_summary_by_host_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_summary_by_program.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_summary_by_thread_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_summary_by_user_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_statements_summary_global_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_current.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_history.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_history_long.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_summary_by_account_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_summary_by_host_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_summary_by_thread_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_summary_by_user_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_transactions_summary_global_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_current.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_history.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_history_long.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_summary_by_account_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_summary_by_host_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_summary_by_instance.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_summary_by_thread_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_summary_by_user_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/events_waits_summary_global_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/file_instances.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/file_summary_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/file_summary_by_instance.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/global_status.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/global_variables.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/host_cache.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/hosts.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/memory_summary_by_account_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/memory_summary_by_host_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/memory_summary_by_thread_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/memory_summary_by_user_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/memory_summary_global_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/metadata_locks.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/mutex_instances.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/objects_summary_global_by_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/performance_timers.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/prepared_statements_instances.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/processlist.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_applier_configuration.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_applier_status.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_applier_status_by_coordinator.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_applier_status_by_worker.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_connection_configuration.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_connection_status.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_group_member_stats.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/replication_group_members.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/rwlock_instances.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/session_account_connect_attrs.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/session_connect_attrs.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/session_status.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/session_variables.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/setup_actors.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/setup_consumers.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/setup_instruments.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/setup_objects.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/setup_timers.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/socket_instances.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/socket_summary_by_event_name.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/socket_summary_by_instance.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/status_by_account.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/status_by_host.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/status_by_thread.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/status_by_user.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/table_handles.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/table_io_waits_summary_by_index_usage.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/table_io_waits_summary_by_table.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/table_lock_waits_summary_by_table.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/threads.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/user_variables_by_thread.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/users.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/performance_schema/variables_by_thread.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/private_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/public_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/server-cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/server-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/db.opt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/host_summary.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/host_summary_by_file_io.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/host_summary_by_file_io_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/host_summary_by_stages.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/host_summary_by_statement_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/host_summary_by_statement_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/innodb_buffer_stats_by_schema.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/innodb_buffer_stats_by_table.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/innodb_lock_waits.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/io_by_thread_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/io_global_by_file_by_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/io_global_by_file_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/io_global_by_wait_by_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/io_global_by_wait_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/latest_file_io.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/memory_by_host_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/memory_by_thread_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/memory_by_user_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/memory_global_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/memory_global_total.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/metrics.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/processlist.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/ps_check_lost_instrumentation.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_auto_increment_columns.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_index_statistics.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_object_overview.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_redundant_indexes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_table_lock_waits.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_table_statistics.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_table_statistics_with_buffer.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_tables_with_full_table_scans.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/schema_unused_indexes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/session.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/session_ssl_status.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/statement_analysis.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/statements_with_errors_or_warnings.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/statements_with_full_table_scans.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/statements_with_runtimes_in_95th_percentile.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/statements_with_sorting.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/statements_with_temp_tables.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/sys_config.TRG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/sys_config.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/sys_config.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/sys_config_insert_set_user.TRN" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/sys_config_update_set_user.TRN" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/user_summary.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/user_summary_by_file_io.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/user_summary_by_file_io_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/user_summary_by_stages.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/user_summary_by_statement_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/user_summary_by_statement_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/version.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/wait_classes_global_by_avg_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/wait_classes_global_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/waits_by_host_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/waits_by_user_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/waits_global_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024host_summary.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024host_summary_by_file_io.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024host_summary_by_file_io_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024host_summary_by_stages.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024host_summary_by_statement_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024host_summary_by_statement_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024innodb_buffer_stats_by_schema.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024innodb_buffer_stats_by_table.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024innodb_lock_waits.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024io_by_thread_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024io_global_by_file_by_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024io_global_by_file_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024io_global_by_wait_by_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024io_global_by_wait_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024latest_file_io.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024memory_by_host_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024memory_by_thread_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024memory_by_user_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024memory_global_by_current_bytes.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024memory_global_total.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024processlist.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024ps_digest_avg_latency_distribution.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024ps_schema_table_statistics_io.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024schema_flattened_keys.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024schema_index_statistics.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024schema_table_lock_waits.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024schema_table_statistics.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024schema_table_statistics_with_buffer.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024schema_tables_with_full_table_scans.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024session.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024statement_analysis.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024statements_with_errors_or_warnings.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024statements_with_full_table_scans.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024statements_with_sorting.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024statements_with_temp_tables.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024user_summary.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024user_summary_by_file_io.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024user_summary_by_file_io_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024user_summary_by_stages.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024user_summary_by_statement_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024user_summary_by_statement_type.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024wait_classes_global_by_avg_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024wait_classes_global_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024waits_by_host_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024waits_by_user_by_latency.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/mysql_keycloak_data/sys/x@0024waits_global_by_latency.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/microservices-my-easy-bytez.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/microservices-my-easy-bytez.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,8 +34,11 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -333,7 +51,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.default.accountsdb: Compose Deployment.executor": "Run",
     "Docker.prod.keycloak: Compose Deployment.executor": "Run",
+    "Maven.accounts [clean,compile].executor": "Run",
+    "Maven.accounts [clean,package].executor": "Run",
     "Maven.gatewayserver [clean,compile].executor": "Run",
     "Maven.gatewayserver [clean].executor": "Run",
     "Maven.gatewayserver [compile].executor": "Run",
@@ -349,6 +70,7 @@
     "Spring Boot.EurekaserverApplication.executor": "Debug",
     "Spring Boot.GatewayserverApplication.executor": "Debug",
     "Spring Boot.LoansApplication.executor": "Debug",
+    "Spring Boot.MessagesApplication.executor": "Debug",
     "git-widget-placeholder": "startingFrom-section12-security",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -356,7 +78,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.27701148",
     "run.configurations.included.in.services": "true",
@@ -372,16 +94,7 @@
       <recent name="serg.shamiryan.accounts.service.client" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="MicronautRunConfigurationType" />
-        <option value="QuarkusRunConfigurationType" />
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.AccountsApplication">
+  <component name="RunManager" selected="Spring Boot.MessagesApplication (1)">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -399,19 +112,6 @@
     <configuration name="CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cards" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.cards.CardsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="configserver" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.configserver.ConfigServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="serg.shamiryan.configserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -438,8 +138,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessagesApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="messages" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.messages.MessagesApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serg.shamiryan.messages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessagesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="microservices-my-easy-bytez" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.messages.MessagesApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serg.shamiryan.messages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="default.accountsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="accountsdb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="prod.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -457,17 +198,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MessagesApplication (1)" />
         <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Spring Boot.MessagesApplication" />
+        <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
         <item itemvalue="Docker.prod.keycloak: Compose Deployment" />
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
-        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+        <option value="jdk-17.0.10-corretto-17.0.10-3183f394aec4-cf227e86" />
       </set>
     </attachedChunks>
   </component>
@@ -489,6 +231,9 @@
       <workItem from="1705815117797" duration="4236000" />
       <workItem from="1706067945911" duration="23775000" />
       <workItem from="1706696744181" duration="30232000" />
+      <workItem from="1707416553810" duration="854000" />
+      <workItem from="1707417422377" duration="2474000" />
+      <workItem from="1707421221714" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
