@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c6ae2d8-221a-46e8-8fd2-acfbdae95d13" name="Changes" comment="Intermediate commit added keycloak to docker compose">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/microservices-my-easy-bytez.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/microservices-my-easy-bytez.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messages/src/main/java/serg/shamiryan/messages/functions/MessageFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/messages/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/src/main/java/serg/shamiryan/messages/dto/AccountsMessageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/messages/src/main/java/serg/shamiryan/messages/dto/AccountsMsgDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/messages/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="startingFrom-section10-resiliency" />
+        <entry key="$PROJECT_DIR$" value="startingFrom-section12-security" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,8 +70,9 @@
     "Spring Boot.EurekaserverApplication.executor": "Debug",
     "Spring Boot.GatewayserverApplication.executor": "Debug",
     "Spring Boot.LoansApplication.executor": "Debug",
+    "Spring Boot.MessagesApplication (1).executor": "Debug",
     "Spring Boot.MessagesApplication.executor": "Debug",
-    "git-widget-placeholder": "startingFrom-section12-security",
+    "git-widget-placeholder": "startingFrom-section13-cloud-function",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -152,7 +153,7 @@
       </method>
     </configuration>
     <configuration name="MessagesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="microservices-my-easy-bytez" />
+      <module name="messages" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="serg.shamiryan.messages.MessagesApplication" />
       <extension name="coverage">
         <pattern>
@@ -233,7 +234,7 @@
       <workItem from="1706696744181" duration="30232000" />
       <workItem from="1707416553810" duration="854000" />
       <workItem from="1707417422377" duration="2474000" />
-      <workItem from="1707421221714" duration="334000" />
+      <workItem from="1707421221714" duration="2806000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -267,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706956721357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Intermediate commit added keycloak to docker compose">
+      <option name="closed" value="true" />
+      <created>1707421678146</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707421678146</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
