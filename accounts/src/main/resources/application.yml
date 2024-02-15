@@ -20,6 +20,8 @@ spring:
   #      enabled: true
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update
   sql:
     init:
       mode: always
@@ -29,6 +31,23 @@ spring:
     openfeign:
       circuitBreaker:
         enabled: true
+    function:
+      definition: updateCommunication
+    stream:
+      bindings:
+        #Using input binding we can read from the queue
+        updateCommunication-in-0:
+          destination: communication-sent
+          group: ${spring.application.name}
+        sendCommunication-out-0:
+          destination: send-communication
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
 
 management:
   endpoints:

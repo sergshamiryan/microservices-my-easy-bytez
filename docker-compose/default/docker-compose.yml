@@ -1,4 +1,20 @@
 services:
+  rabbit:
+    image: rabbitmq:3.12-management
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: rabbitmq-diagnostics check_port_connectivity
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+
   redis:
     image: redis
     ports:
@@ -84,12 +100,15 @@ services:
       #need to be 3306, because this is internal docker network
       #communication within docker containers
       SPRING_DATASOURCE_URL: "jdbc:mysql://accountsdb:3306/accountsdb"
+      SPRING_RABBITMQ_HOST: "rabbit" #Service name
     depends_on:
       configserver:
         condition: service_healthy
       eurekaserver:
         condition: service_healthy
       accountsdb:
+        condition: service_healthy
+      rabbit:
         condition: service_healthy
     extends:
       file: common-config.yml
@@ -197,7 +216,7 @@ services:
       SPRING_DATA_REDIS_CONNECT-TIMEOUT: 2S
       SPRING_DATA_REDIS_HOST: redis
       SPRING_DATA_REDIS_PORT: 6379
-      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: http://localhost:8080/realms/master/protocol/openid-connect/certs
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: http://keycloak:8080/realms/master/protocol/openid-connect/certs
     extends:
       file: common-config.yml
       service: microservice-nonDb-base-config-with-eureka

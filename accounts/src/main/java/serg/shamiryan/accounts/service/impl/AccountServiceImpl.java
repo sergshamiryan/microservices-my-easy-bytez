@@ -1,35 +1,54 @@
 package serg.shamiryan.accounts.service.impl;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import serg.shamiryan.accounts.service.AccountService;
 import serg.shamiryan.accounts.constants.AccountsConstants;
 import serg.shamiryan.accounts.dto.AccountsDto;
+import serg.shamiryan.accounts.dto.AccountsMsgDto;
 import serg.shamiryan.accounts.dto.CustomerDto;
 import serg.shamiryan.accounts.entity.Accounts;
 import serg.shamiryan.accounts.entity.Customer;
+import serg.shamiryan.accounts.exception.CustomerAlreadyExistsException;
 import serg.shamiryan.accounts.exception.ResourceNotFoundException;
 import serg.shamiryan.accounts.mapper.AccountMapper;
 import serg.shamiryan.accounts.mapper.CustomerMapper;
 import serg.shamiryan.accounts.repository.AccountsRepository;
 import serg.shamiryan.accounts.repository.CustomerRepository;
+import serg.shamiryan.accounts.service.AccountService;
 
 import java.util.Random;
 
 @Service
+@Log4j2
 @RequiredArgsConstructor
 public class AccountServiceImpl implements AccountService {
     private final CustomerRepository customerRepository;
     private final AccountsRepository accountsRepository;
+    private final StreamBridge streamBridge;
 
     @Override
     @Transactional
     public Customer createAccount(CustomerDto customerDto) {
         Customer customer = CustomerMapper.mapToCustomer(customerDto, new Customer());
+        if (customerRepository.existsByMobileNumber(customerDto.getMobileNumber())) {
+            throw new CustomerAlreadyExistsException("Exists");
+        }
         Customer savedCustomer = customerRepository.save(customer);
-        accountsRepository.save(this.createNewAccount(savedCustomer));
+        Accounts savedAccount = accountsRepository.save(this.createNewAccount(savedCustomer));
+        this.sendCommunication(savedAccount, savedCustomer);
         return customer;
+    }
+
+    private void sendCommunication(Accounts accounts, Customer customer) {
+        var accountMessageDto = new AccountsMsgDto(accounts.getAccountNumber(), customer.getName(),
+                customer.getEmail(), customer.getMobileNumber());
+        log.info("Sending Communication request for the details: {}", accountMessageDto);
+        /*By "sendCommunication-out-0" binding name it knows to which exchange forward the message*/
+        boolean result = streamBridge.send("sendCommunication-out-0", accountMessageDto);
+        log.info("Is the communication request successfully processed? : {}", result);
     }
 
     private Accounts createNewAccount(Customer customer) {

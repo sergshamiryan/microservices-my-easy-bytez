@@ -9,6 +9,22 @@ spring:
       definition: email|sms
     stream:
       bindings:
-        emailsms-in-O:
+        #emailsms - binding name
+        #in - indicates input binding
+        #0 - starting index value
+        #For getting message from message broker
+        emailsms-in-0:
+          #Any messages coming to queue, will be redirected to above function,destination(queue) random name
           destination: send-communication
+          #When we specify group queue will not have randomly generated suffix value
           group: ${spring.application.name}
+        #For publishing message in message broker
+        emailsms-out-0:
+          destination: communication-sent
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
