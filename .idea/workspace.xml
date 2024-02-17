@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c6ae2d8-221a-46e8-8fd2-acfbdae95d13" name="Changes" comment="Intermediate commit added spring cloud stream">
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/dto/AccountsMsgDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/funcitons/AccountFunctions.java" afterDir="false" />
+    <list default="true" id="9c6ae2d8-221a-46e8-8fd2-acfbdae95d13" name="Changes" comment="Email and sms are send using rabbit">
+      <change afterPath="$PROJECT_DIR$/k8s/dashboard-adminuser.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/dashboard-rolebinding.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/secret.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/entity/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/repository/AccountsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/repository/AccountsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/serg/shamiryan/accounts/service/impl/AccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/serg/shamiryan/gatewayserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/messages/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messages/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/messages/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="startingFrom-section13-cloud-function" />
+        <entry key="$PROJECT_DIR$" value="startingFrom-section13-kafka" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,14 +49,19 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2arOKmhGk7dt6N8MPuHbLwqGEmz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Docker.default.accountsdb: Compose Deployment.executor": "Run",
+    "Docker.default.kafka: Compose Deployment.executor": "Run",
     "Docker.prod.keycloak: Compose Deployment.executor": "Run",
     "Maven.accounts [clean,compile].executor": "Run",
     "Maven.accounts [clean,package].executor": "Run",
@@ -82,18 +83,18 @@
     "Spring Boot.LoansApplication.executor": "Debug",
     "Spring Boot.MessagesApplication (1).executor": "Debug",
     "Spring Boot.MessagesApplication.executor": "Debug",
-    "git-widget-placeholder": "startingFrom-section13-cloud-stream",
+    "git-widget-placeholder": "startingFrom-section15-kubernetes",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.27701148",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "google-java-format.settings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -105,7 +106,7 @@
       <recent name="serg.shamiryan.accounts.service.client" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountsApplication">
+  <component name="RunManager" selected="Spring Boot.MessagesApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -181,6 +182,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="default.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="kafka" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/default/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="prod.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -196,8 +210,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AccountsApplication" />
         <item itemvalue="Spring Boot.MessagesApplication" />
+        <item itemvalue="Docker.default.kafka: Compose Deployment" />
+        <item itemvalue="Spring Boot.AccountsApplication" />
         <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
         <item itemvalue="Docker.prod.keycloak: Compose Deployment" />
       </list>
@@ -231,6 +246,8 @@
       <workItem from="1707416553810" duration="854000" />
       <workItem from="1707417422377" duration="2474000" />
       <workItem from="1707421221714" duration="19655000" />
+      <workItem from="1708095113789" duration="578000" />
+      <workItem from="1708095715701" duration="18381000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -295,6 +312,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Circuit breaker added" />
     <MESSAGE value="All patterns covered, docker compose yml is updated" />
     <MESSAGE value="Credentials grant type added" />
@@ -312,5 +330,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
